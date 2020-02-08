@@ -32,6 +32,7 @@ public class App
         		tot=tot+cw;
         		choconame[j]=cn;
         		choco[j]=cw;
+        		j++;
         	}
         	
         	
@@ -53,6 +54,7 @@ public class App
         		}
         	}
         }
+        System.out.println("The total weight of chocolates is : "+tot);
         System.out.println("The chocolates after sorting\n");
         for(i=0;i<nc;i++)
         {
