@@ -4,7 +4,7 @@ public class App
 {
 	public static void main( String[] args )
     {
-        int nc,ch,cw,sw,i,tot=0,j=0;
+        int nc,ch,cw,sw,i,tot=0,j=0,l;
         System.out.println("Enter the no.of children ");
         Scanner in =new Scanner(System.in);
         nc=in.nextInt();
@@ -17,7 +17,7 @@ public class App
         	if(ch==1)
         	{
         		System.out.println("Enter the Sweet name and weight");
-        		String sn=in.nextLine();
+        		String sn=in.next();
         		sw=in.nextInt();
         		tot=tot+sw;
         		Sweets obsweet= new Sweets();
@@ -27,19 +27,16 @@ public class App
         	if(ch==0)
         	{
         		System.out.println("Enter the Candy name and weight");
-        		String cn=in.nextLine();
+        		String cn=in.next();
         		cw=in.nextInt();
         		tot=tot+cw;
         		choconame[j]=cn;
         		choco[j]=cw;
         	}
-        	else
-        	{
-        		System.out.println("Invalid entry \n Enter again");
-        		
-        	}
+        	
         	
         }
+        l=j;
         for(i=0;i<nc;i++)
         {
         	for(j=i+1;j<nc;j++)
@@ -56,6 +53,12 @@ public class App
         		}
         	}
         }
+        System.out.println("The chocolates after sorting\n");
+        for(i=0;i<nc;i++)
+        {
+        	if(choconame[i]!=null)	
+        		System.out.println(choconame[i]);
+        }        
         
     }
     public static class Gifts
