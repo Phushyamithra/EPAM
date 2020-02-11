@@ -21,7 +21,8 @@ public class AppTest extends App
 		answer = cal.Sub(5, 2);
 				
 		assertEquals(3, answer);
-				
+				 
+		
 			
 		// test the Multiply function
 

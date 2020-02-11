@@ -22,7 +22,7 @@ public class App
 			Scanner in =new Scanner(System.in);
 			App a=new App();
 			Operation op= a.new Operation();
-			num1=in.nextInt();
+			num1=in.nextInt(); 
 			num2=in.nextInt();
 			System.out.println("Enter the operation\n1.Addition\n2.Substraction\n3.Multiplication\n4.Division");
 			ch=in.nextInt();
